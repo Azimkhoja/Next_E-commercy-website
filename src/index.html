@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next dokon</title> 
+    <!-- vue js cdn link -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- tailwindcss cdn link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- boxicon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Noto+Sans+Display:wght@400;500&family=Roboto:wght@300;400;700&family=Work+Sans:wght@200;400;700&display=swap" rel="stylesheet">    <!-- style fayl -->
+    
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body  class="bg-[#ECF4FF] font-['Work_Sans']" id="root">
+    <header class=" shadow-lg bg-white pt-2">
+        <div class="container mx-auto ">
+            <div class="flex items-center justify-between  ml-[1154px] mb-1">
+                <div class="flex items-center justify-between">
+                    <i class='bx bxs-envelope mr-4'></i>
+                    <p class="leading-5">Aloqa uchun</p>
+                </div>
+                <div class="flex items-center justify-center">
+                    <p>UZ</p>
+                    <i class='bx bxs-chevron-down text-xl' ></i>
+                </div>
+            </div>
+            <nav class="nav flex py-3 justify-between items-center" >
+                <img src="./images/Logo.svg" alt="site logo">
+                <div class="flex border rounded-lg p-2 w-[150px]  h-11 text-white flex justify-center gap-4 items-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500">
+                    <i class='bx bx-menu text-3xl text-white cursor-pointer'></i> 
+                    <p>KATALOG</p>   
+                </div>
+
+                <div class="flex items-center justify-between w-[376px] h-11 border rounded-lg outline-none pl-5">
+                    <input type="text" placeholder="Mahsulot izlash">
+                    <div class="w-16 bg-[#0D63F3] h-11 rounded-r-lg flex justify-center items-center">
+                        <i class='bx bx-search  text-white text-xl'></i>
+                    </div>
+                </div>
+                <div class=" flex justify-between w-1/4 h-12 items-center">
+                    <div class="flex justify-center bg-[#ECF4FF] rounded-lg items-center h-11 w-11">
+                        <img src="./images/like.svg" alt="like image">
+                    </div>
+                    <div class="bg-[#ECF4FF] rounded-lg  h-11 w-11 flex justify-center items-center">
+                        <img src="./images/karzina.svg" alt="cart image">
+                    </div>
+                    <div class=" h-11 flex justify-center items-center w-[105px] bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] rounded-lg">
+                        <p>Kirish</p>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <!-- cashback section started -->
+        <section class="cashback">
+            <div class="container mx-auto ">
+                <div class="cashback__wrapper flex flex-col">
+
+                    <div class=" relative flex justify-center items-center mt-10 w-full ">
+                        <div class="absolute top-1/2 -translate-y-1/2 -left-16 h-11 w-11 flex justify-center items-center bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] rounded-full">
+                            <i class='bx bxs-chevron-left text-xl'></i>
+                    </div>
+                    <img src="./images/cashback.png" alt="cashback image " class="w-full rounded-2xl">
+                    <div class="absolute top-1/2 -right-16 -translate-y-1/2 h-11 w-11 flex justify-center items-center bg-gradient-to-r to-pink-500 via-purple-500 from-indigo-500  rounded-full">
+                        <i class='bx bxs-chevron-right text-xl text-white'></i>
+                    </div>
+                </div>
+                <ul class="slider flex justify-center items-center mt-5">
+                    <li class="sliter-item w-5 h-5 bg-gradient-to-r  from-indigo-500    via-purple-500   to-pink-500  mx-4 rounded-full"></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150 "></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150 "></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150 "></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150 "></li>
+                </ul>
+                
+            </div>
+        </div>
+        </section>
+        <!-- cashback section finished -->
+        <section class="category">
+            <div class="container mx-auto">
+                <h1 class="text-3xl mb-5 mt-10">Kategoriyalar</h1>
+                <div class="category__wrapper mt-10 flex justify-between">
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/iphone.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/laptop.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/tele.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/wach.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/airpods.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/conditioner.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/fridge.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/stiralka.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+                    <div class="w-[140px] h-[200px] pt-2 pb-4 flex flex-col justify-between items-center bg-white rounded-lg">
+                        <img src="./images/tele.png" alt="iphone smartphone" class="rounded-t-lg w-full pb-1">
+                        <p class="h-9">Smartfonlar</p>
+                    </div>
+
+                </div>
+                <div class="w-[1536px] h-14 flex justify-center items-center bg-white mb-10 mt-7 rounded-xl">
+                    <p class="text-xl">Batafsil</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="most">
+            <div class="container mx-auto">
+                
+                    <h2 class="text-3xl">Eng ko'p sotilgan</h2>
+                    <div class="most__wrapper mt-5 flex flex-wrap gap-[30px] mb-9" >
+                    <div class="card__wrapper w-[230px] bg-white rounded-lg "  v-for="card in mahsulot">
+                        <div class="card flex flex-col relative p-3" >
+                            <img src="./images/Sevimli.svg" alt="Sevimli" class="absolute right-2 top-2">
+                            <img src="./images/image 15.png" alt="mac" class="h-[180px] h-[180px]">
+                            <p class="text-[#0D63F3]">{{card.price}} so'm</p>
+                            <p class="h-12"> {{card.title}} </p>
+                            <p class="my-4"> {{card.ordered}}</p>
+                            <div class="flex justify-between items-center mr-5">
+                                <span class="w-[130px] h-10 flex justify-center items-center text-white bg-[#0D63F3] rounded-lg hover:bg-blue-500">Sotib olish</span>
+                                <img src="./images/karzina.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[1536px] h-14 flex justify-center items-center bg-white rounded-xl">
+                    <p class="text-xl">Ko'proq ko'rish</p>
+                </div>
+            </div>
+        </section>
+        <!-- most section finished -->
+        <section>
+            <div class="container mx-auto">
+                <div class="reklama mt-[60px] relative">
+                    <div class="absolute top-1/2 -translate-y-1/2 -left-16 h-11 w-11 flex justify-center items-center bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] rounded-full">
+                        <i class='bx bxs-chevron-left text-xl'></i>
+                    </div>
+                    <img src="./images/reklama.jpg" alt="reklama" class="w-[1536px] rounded-3xl">
+                    <div class="absolute top-1/2 -right-16 -translate-y-1/2 h-11 w-11 flex justify-center items-center bg-gradient-to-r to-pink-500 via-purple-500 from-indigo-500  rounded-full">
+                        <i class='bx bxs-chevron-right text-xl text-white'></i>
+                    </div>
+                </div>
+                <ul class="slider flex justify-center items-center mt-5 mb-[60px]">
+                    <li class="sliter-item w-5 h-5 bg-gradient-to-r  from-indigo-500    via-purple-500   to-pink-500  mx-4 rounded-full"></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150"></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150"></li>
+                </ul>
+            </div>
+        </section>
+        <!-- reklama section finished -->
+
+        <section>
+            <div class="container mx-auto">
+                <h2 class="text-3xl">Eng ommabop</h2>
+                    <div class="most__wrapper mt-5 flex flex-wrap gap-[30px] mb-9" >
+                    <div class="card__wrapper w-[230px] bg-white rounded-lg "  v-for="card in mahsulot">
+                        <div class="card flex flex-col relative p-3" >
+                            <img src="./images/Sevimli.svg" alt="Sevimli" class="absolute right-2 top-2">
+                            <img src="./images/image 15.png" alt="mac" class="h-[180px] h-[180px]">
+                            <p class="text-[#0D63F3]">{{card.price}} so'm</p>
+                            <p class="h-12"> {{card.title}} </p>
+                            <p class="my-4"> {{card.ordered}}</p>
+                            <div class="flex justify-between items-center mr-5">
+                                <span class="w-[130px] h-10 flex justify-center items-center text-white bg-[#0D63F3] rounded-lg">Sotib olish</span>
+                                <img src="./images/karzina.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[1536px] h-14 flex justify-center items-center bg-white rounded-xl">
+                    <p class="text-xl">Ko'proq ko'rish</p>
+                </div>
+            </div>
+        </section>
+        <!-- ommabop section finished -->
+
+        <section class="brands">
+            <div class="container mx-auto">
+                <h2 class="text-4xl mt-[60px]">Brandlar bo'yicha</h2>
+                <div class="brand__wrapper flex flex-wrap gap-6 mt-5 mb-[60px]">
+                    <div class="brand w-[198px] h-[100px] bg-white rounded-xl flex justify-center items-center hover:scale-110 duration-150 hover:shadow-xl" v-for="brand in brands">
+                        <img :src=brand.img alt="{{brand.name}}">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- brands section finished -->
+
+        <section>
+            <div class="container mx-auto">
+                <div class="reklama mt-[60px] relative">
+                    <div class="absolute top-1/2 -translate-y-1/2 -left-16 h-11 w-11 flex justify-center items-center bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] rounded-full">
+                        <i class='bx bxs-chevron-left text-xl'></i>
+                    </div>
+                    <img src="./images/reklama.jpg" alt="reklama" class="w-[1536px] rounded-3xl">
+                    <div class="absolute top-1/2 -right-16 -translate-y-1/2 h-11 w-11 flex justify-center items-center bg-gradient-to-r to-pink-500 via-purple-500 from-indigo-500  rounded-full">
+                        <i class='bx bxs-chevron-right text-xl text-white'></i>
+                    </div>
+                </div>
+                <ul class="slider flex justify-center items-center mt-5 mb-[60px]">
+                    <li class="sliter-item w-5 h-5 bg-gradient-to-r  from-indigo-500    via-purple-500   to-pink-500  mx-4 rounded-full"></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150"></li>
+                    <li class="sliter-item w-4 h-4 bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] mx-5 rounded-full hover:scale-125 duration-150"></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ================= -->
+        <section>
+            <div class="container mx-auto">
+                <h2 class="text-4xl mt-[60px]">Do'konlarimiz</h2>
+                <div class="brand__wrapper flex flex-wrap gap-6 mt-5 mb-20">
+                    <div class="brand w-[198px] h-[100px] bg-white rounded-xl flex justify-center items-center hover:scale-110 duration-150 hover:shadow-xl" v-for="market in markets">
+                        <img :src=market.img :alt=market.name>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer starting here -->
+        <section class="footer bg-gradient-to-r from-[#f64d4d3a] to-[#4d5ef639] pb-10">
+            <div class="container mx-auto">
+                <div class="footer__wrapper flex justify-between mb-[50px]">
+                    <div class="footer__left  pt-[60px] flex justify-between items-start w-1/2">
+                        <ul class="footer__left--list">
+                            <li class="footer__left--list-item text-2xl ">Hujjatlar</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Umumiy shartlar</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Oferta arxivi</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Nizom</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Guvohnoma</li>
+                        </ul>
+                        <ul class="footer__left--list">
+                            <li class="footer__left--list-item  text-2xl font">Servis</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Do'konlar</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Biz haqimizda</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Hamkorlik uchun</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Qaytarish</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Promokodlar</li>
+                        </ul>
+                        <ul class="footer__left--list">
+                            <li class="footer__left--list-item text-2xl">Mahsulotlar katalogi</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Katalog 1</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Katalog 2</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Katalog 3</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Katalog 4</li>
+                            <li class="footer__left--list-item pt-4 text-lg">Katalog 5</li>
+                        </ul>
+                    </div>
+                    <div class="footer__right pt-[60px]">
+                        <ul class="footer__right--list">
+                            <li class="footer__right--list-item text-2xl">Axborot xizmati</li>
+                            <li class="footer__right--list-item text-lg pt-4">contact.@nextstore.uz</li>
+                            <li class="footer__right--list-item text-lg pt-4">+998 97 712 96 96</li>
+                            <li class="footer__right--list-item text-lg">+998 97 712 96 96 </li>
+                            <li class="footer__right--list-item text-lg pt-4">Sag’bon 186, Olmazor tumani, Toshkent, O'zbekiston</li>
+                            <li class="footer__right--list-item text-lg pt-7">
+                                <div class="flex gap-6">
+                                    <img src="./images/Facebook - Original.svg" alt="facebook" class="hover:scale-125 duration-150">
+                                    <img src="./images/Instagram - Original.svg" alt="instagram logo" class="hover:scale-125 duration-150">
+                                    <img src="./images/Telegram - Original.svg" alt="telegram logo" class="hover:scale-125 duration-150">
+                                    <img src="./images/TikTok - Original.svg" alt="tiktok logo" class="hover:scale-125 duration-150">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <hr class="h-[2px] bg-gradient-to-r from-[#4d5ef6cf] to-[#f64d4d3a]">
+                <div class="flex justify-between mt-10 pr-64 ">
+                    <p class="text-lg">2022  Nextstore.com</p>
+                    <p class="text-lg">Powered by </p>
+                </div>
+            </div>
+        </section>
+        <!-- footer section finished -->
+    </main>
+    
+
+    
+</body>
+<script src="./source.js"></script>
+<script src="./app.js"></script>
+</html>
